@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone } from 'lucide-react';
 
 const Contact = () => {
     return (
@@ -10,7 +10,7 @@ const Contact = () => {
                     {/* Left Side: Map / Image */}
                     <div className="lg:w-1/2 min-h-[400px] relative bg-gray-200">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968482413!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1622222222222!5m2!1sen!2sus"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.1422937950147!2d29.0123!3d41.0789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab63f6f7f6f7f%3A0x1234567890abcdef!2sLevent%2C%20Alt%20Zeren%20Sk.%20No%3A29%2C%2034330%20Be%C5%9Fikta%C5%9F%2F%C4%B0stanbul!5e0!3m2!1sen!2str!4v1622222222222!5m2!1sen!2str"
                             width="100%"
                             height="100%"
                             style={{ border: 0, filter: 'grayscale(100%) contrast(1.2)' }}
@@ -41,35 +41,26 @@ const Contact = () => {
                                     <MapPin className="text-terracotta mt-1" />
                                     <div>
                                         <h4 className="font-bold text-cream">Konum</h4>
-                                        <p className="text-gray-400">Bağdat Caddesi No: 360<br />Kadıköy, İstanbul</p>
+                                        <p className="text-gray-400">Levent, Alt Zeren Sk. No:29<br />Beşiktaş/İstanbul</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center space-x-4">
                                     <Phone className="text-terracotta" />
                                     <div>
                                         <h4 className="font-bold text-cream">Telefon</h4>
-                                        <p className="text-gray-400">+90 (216) 123 45 67</p>
-                                    </div>
-                                </div>
-                                <div className="flex items-center space-x-4">
-                                    <Mail className="text-terracotta" />
-                                    <div>
-                                        <h4 className="font-bold text-cream">E-posta</h4>
-                                        <p className="text-gray-400">merhaba@360fitpilates.com</p>
-                                    </div>
-                                </div>
-                                <div className="flex items-center space-x-4">
-                                    <Clock className="text-terracotta" />
-                                    <div>
-                                        <h4 className="font-bold text-cream">Çalışma Saatleri</h4>
-                                        <p className="text-gray-400">Pzt-Cum: 07:00 - 21:00 | Cmt: 09:00 - 18:00</p>
+                                        <p className="text-gray-400">+90 539 424 45 86</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <button className="px-8 py-4 bg-terracotta text-white rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 transform hover:translate-y-[-2px] shadow-lg">
+                            <a
+                                href="https://wa.me/905394244586"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block px-8 py-4 bg-terracotta text-white rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 transform hover:translate-y-[-2px] shadow-lg"
+                            >
                                 Randevu Alın
-                            </button>
+                            </a>
                         </motion.div>
                     </div>
                 </div>

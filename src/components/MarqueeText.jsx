@@ -14,7 +14,7 @@ const MarqueeText = ({ text, direction = 1 }) => {
         <div ref={scrollRef} className="overflow-hidden py-10">
             <motion.h2
                 style={{ x }}
-                className="text-[8rem] md:text-[12rem] font-display font-bold whitespace-nowrap text-terracotta/10 uppercase leading-none select-none"
+                className="text-[8rem] md:text-[12rem] font-display font-bold whitespace-nowrap text-[#1a252f] uppercase leading-none select-none"
             >
                 {text} {text} {text}
             </motion.h2>

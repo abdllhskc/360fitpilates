@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { Instagram } from 'lucide-react';
 import Hero3D from '../components/Hero3D';
 import MarqueeText from '../components/MarqueeText';
 import ServiceCard from '../components/ServiceCard';
@@ -72,6 +73,21 @@ const Home = () => {
                         >
                             Pilates Stüdyosu
                         </motion.p>
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1, delay: 1.5 }}
+                            className="mt-8"
+                        >
+                            <a
+                                href="https://wa.me/905394244586"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block px-8 py-4 bg-terracotta text-white rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 transform hover:translate-y-[-2px] shadow-lg pointer-events-auto"
+                            >
+                                Ücretsiz Deneme Dersi
+                            </a>
+                        </motion.div>
                     </div>
                 </section>
 
@@ -111,7 +127,15 @@ const Home = () => {
                 <Contact />
 
                 {/* Footer */}
-                <footer className="py-10 text-center border-t border-primary/10 bg-cream">
+                <footer className="py-10 text-center border-t border-primary/10 bg-cream flex flex-col items-center justify-center gap-4">
+                    <a
+                        href="https://www.instagram.com/360fit_pilates/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary hover:text-terracotta transition-colors duration-300"
+                    >
+                        <Instagram size={24} />
+                    </a>
                     <p className="font-display text-lg text-primary">&copy; 2024 360 Fit Pilates. Tüm hakları saklıdır.</p>
                 </footer>
             </motion.div>
